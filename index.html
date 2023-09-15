@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var sum = 0;
+        let num = 1;
+        let arr = [];
+        while(num != 0){
+            num = prompt("Введіть ціле число");
+            arr.push(num);
+            sum += parseInt(num);
+        }
+        document.write(sum + "<br><br>");
+        
+        let a = [12, 30, 50];
+        let b = ["sunday", "monday", "tuesday"];
+        let c = [1, 2, 3];
+        let myArray = [5];
+        let colors = ["red", "green", "blue"];
+        document.write("<br><br>");
+        
+        let seasons = ["Зима", "Весна", "Літо", "Осінь"];
+        alert (seasons);
+        seasons.forEach(alert);
+        document.write("Елементи масиву seasons:");
+        for (let i = 0; i < seasons.length; i++) 
+        {
+        document.write(seasons[i] + " ");
+        }
+        document.write("<br><br>");
+        
+        let daysOfWeek = ["Понеділок","Вівторок","Середа","Четверг","П'ятниця","Субота","Неділя"];
+        for(let j = 0; j <daysOfWeek.length; j++)
+        {
+            document.write(daysOfWeek[j] + "<br>");
+        }
+        document.write(daysOfWeek.reverse());
+        document.write("<br>");
+        daysOfWeek.reverse();
+        daysOfWeek.pop();
+        daysOfWeek.unshift("Неділя");
+        document.write(daysOfWeek);
+        document.write("<br><br>");
+        
+        let newSeasons = [];
+        let winter = ["Грудень","Січень","Лютий"];
+        let spring = ["Березень","Квітень","Травень"];
+        let summer = ["Червень","Липень","Серпень"];
+        let autumn = ["Вересень","Жовтень","Листопад"];
+        document.write(newSeasons.concat(winter, spring, summer, autumn));
+        document.write("<br><br>");
+        
+        let array = [];
+        array[0] = [1, 2, 3]
+        array[1] = [4, 5, 6]
+        array[2] = [7, 8, 9]
+        document.write("<table>");
+        for(let h = 0; h < 3; h++)
+        {
+            document.write("<tr>");
+            for(let l = 0; l < 3; l++)
+            {
+                document.write("<td style='text-align:center;'>" + array[h][l] + "</td>");
+            }
+        }
+        document.write("<br>");
+        
+        let pol = [];
+        pol[0] = [1, 2, 3]
+        pol[1] = [4, 5, 6]
+        pol[2] = [7, 8, 9]
+        document.write("<table>");
+        for(let e = 0; e < 3; e++)
+        {
+            document.write("<tr>");
+            for(let r = 0; r < 3; r++)
+            {
+                if(e == r)
+                {
+                    pol[e][r] = 1;
+                    document.write("<td style='text-align:center;'>" + pol[e][r] + "</td>");
+                }
+                if(e != r)
+                {
+                    pol[e][r] = 0;
+                    document.write("<td style='text-align:center;'>" + pol[e][r] + "</td>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
